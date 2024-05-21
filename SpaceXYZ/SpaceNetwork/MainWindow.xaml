@@ -1,0 +1,22 @@
+﻿<Window x:Class="SpaceNetwork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpaceNetwork"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,1,-1" Background="#FFFFCC80">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="289*"/>
+            <ColumnDefinition Width="208*"/>
+            <ColumnDefinition Width="294*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="CreateNewButton" Content="MISSION CONTROL SYSTEM" HorizontalAlignment="Left" Margin="133,62,0,0" VerticalAlignment="Top" Width="339" Click="CreateNewButton_Click" Height="47" Grid.ColumnSpan="2"  FontSize="18" FontWeight="Bold" Grid.Column="1" Background="#FFBBE8F1"/>
+
+        <Button Content="COMMUNICATION SYSTEM" HorizontalAlignment="Left" Margin="38,62,0,0" VerticalAlignment="Top" Width="338" Height="47" Click="Button_Click" Grid.ColumnSpan="2" FontSize="18" FontWeight="Bold" Background="#FFBBE8F1"  />
+        <TextBox FontWeight="Bold" x:Name="DisplayLogs" Background="#FFDF5A7C"  HorizontalAlignment="Left" Height="177" Margin="275,194,0,0" VerticalAlignment="Top" Width="265" Grid.ColumnSpan="3"/>
+        <Label Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="275,-13,0,0"/>
+        <Button FontWeight="Bold"  Content="Show Communication Logs" HorizontalAlignment="Left" Margin="275,144,0,0" VerticalAlignment="Top" Width="265" Click="Show_Logs_Click" Height="45" Grid.ColumnSpan="3" Background="#FFBBE8F1" FontSize="16"/>
+    </Grid>
+</Window>
